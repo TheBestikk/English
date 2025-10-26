@@ -54,7 +54,8 @@ a {
 }
 
 button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
@@ -64,4 +65,8 @@ button {
 
 img {
   display: inline-block;
+}
+
+body {
+  font-style: "Montserrat", sans-serif;
 }
