@@ -1,0 +1,5 @@
+@use '../utils/variables' as *;
+
+body {
+    font-style: $primary-font;
+}
