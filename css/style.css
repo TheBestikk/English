@@ -96,3 +96,11 @@ body {
     width: 1140px;
   }
 }
+.button {
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 27px 70px;
+}
