@@ -1,1 +1,38 @@
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+
+.header {
+
+    padding-block: 30px;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $third-text;
+
+        &:hover{
+            color: $accent-color;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    button {
+        @include button-ghost
+    }
+
+}

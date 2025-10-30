@@ -1,0 +1,12 @@
+@use '../utils/variables' as *;
+
+@mixin button-filled ( $background-color: $accent-color, $text-color: $secondary-text) {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+@mixin button-ghost ( $border-color: $accent-color, $text-color: $accent-color) {
+    background-color: transparent;
+    color: $text-color;
+    border: 2px solid $border-color;
+} 

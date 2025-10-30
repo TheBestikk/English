@@ -1,1 +1,42 @@
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.banner {
+
+    &__container {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: $primary-text;
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        font-weight: 700;
+        line-height: 165%;
+        color: $primary-text;
+        margin-bottom: 45px;
+
+        span {
+            font-weight: 500;
+            color: $third-text;
+        }
+    }
+
+    button {
+        @include button-filled
+    }
+
+}
