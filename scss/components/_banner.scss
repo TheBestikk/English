@@ -3,9 +3,12 @@
 
 .banner {
 
+    background-image: url("../../images/desktop/banner-bg.jpg");
+    background-repeat: no-repeat;
+
     &__container {
         display: flex;
-        gap: 50px;
+        justify-content: space-between;
     }
 
     &__wrap {
@@ -15,6 +18,7 @@
     }
 
     &__title {
+        font-family: $primary-font;
         font-weight: 800;
         font-size: 58px;
         line-height: 130%;
@@ -24,6 +28,7 @@
     }
 
     &__desc {
+        font-family: $primary-font;
         font-weight: 700;
         line-height: 165%;
         color: $primary-text;
