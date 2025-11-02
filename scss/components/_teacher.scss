@@ -1,0 +1,84 @@
+@use "../utils/variables" as *;
+
+.teacher {
+  &__container {
+    padding: 130px 0 129px ;
+   
+  }
+  &__title {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: $primary-text;
+    padding-bottom: 50px;
+  }
+  &__subtitle {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    color: $primary-text;
+    border-bottom: 1px solid $third-text;
+    padding-bottom: 15px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+  &__icon {
+    height: 20px;
+    width: 25px;
+    fill: $accent-color;
+    
+  }
+  &__text {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: $primary-text;
+    padding-top: 30px;
+    
+  }
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+  }
+  &__desc {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    color: $third-text;
+    
+  }
+  &__link {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    text-decoration: underline;
+    color: $accent-color;
+    padding-top: 22px;
+  }
+  &__item{
+    display: flex;
+    align-items: flex-end;
+    gap: 34px;
+  }
+ &__wrapper-desc{
+  padding-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  &::before{
+    content: "";
+    border: 1px solid $accent-color;
+    width: 20px;
+  }
+ }
+}
