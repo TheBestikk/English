@@ -28,6 +28,34 @@
         width: 27%;
         background-color: $primary-bg;
         padding: 35px 28px 55px;
+        box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.1);
+        height: 341px;
+        transition: 450ms ease-in-out;
+        &:hover {
+
+            background-color: $accent-color;
+
+            .about {
+
+                &__icon {
+                    fill: $primary-bg;
+                }
+
+                &__subtitle {
+                    color: $secondary-text;
+                    &::before {
+                        border: 1px solid $primary-bg;
+                    }
+                }
+
+                &__desc {
+                    color: $secondary-text;
+                }
+
+            }
+
+
+        }
     }
 
     &__icon {
@@ -45,6 +73,15 @@
         text-align: center;
         color: $primary-text;
         margin-bottom: 32px;
+        position: relative;
+        &::before {
+            content: "";
+            border: 1px solid $accent-color;
+            position: absolute;
+            width: 20px;
+            left: 45%;
+            top: 60px;
+        }
     }
 
     &__desc {
@@ -54,6 +91,7 @@
         line-height: 156%;
         text-align: center;
         color: $third-text;
+        margin-bottom: 55px;
     }
 
 }
