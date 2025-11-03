@@ -137,6 +137,11 @@ img {
   color: #FF6B09;
   border: 2px solid #FF6B09;
 }
+.header button:hover {
+  background-color: #FF6B09;
+  color: #FFF;
+  border: none;
+}
 
 .about {
   padding: 280px 0px 130px;
@@ -281,6 +286,11 @@ img {
 .banner button {
   background-color: #FF6B09;
   color: #FFF;
+}
+.banner button:hover {
+  background-color: transparent;
+  border: 2px solid #FF6B09;
+  color: #FF6B09;
 }
 
 .highlights {
