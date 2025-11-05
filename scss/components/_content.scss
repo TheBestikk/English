@@ -6,6 +6,7 @@
     padding: 67px 113px;
     position: absolute;
     width: 1314px;
+    z-index: 2;
 
     &__list {
         display: flex;
@@ -44,5 +45,4 @@
             width: 15px;
         }
     }
-
 }
