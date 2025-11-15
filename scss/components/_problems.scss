@@ -1,2 +1,26 @@
 @use '../utils/variables' as *;
 
+.problems {
+
+    padding: 100px 0px 200px;
+    background-color: $third-bg;
+    background-image: url("../../images/desktop/problems-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: $secondary-text;
+        margin-bottom: 68px;
+
+        span {
+            color: $accent-color;
+        }
+    }
+
+}

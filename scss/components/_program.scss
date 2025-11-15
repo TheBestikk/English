@@ -1,1 +1,89 @@
 @use '../utils/variables' as *;
+
+.program {
+
+    padding-block: 120px;
+    background-color: $third-bg;
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: $secondary-text;
+        margin-bottom: 58px;
+    }
+
+    &__columns {
+        display: flex;
+        border-top: 2px solid $primary-bg;
+        gap: 46px;
+    }
+
+    &__column {
+        width: 20%;
+        position: relative;
+        &::before{
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-color: $accent-color;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 98.7%;
+        }
+    }
+
+    &__rows {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__subtitle {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 93%;
+        text-transform: uppercase;
+        color: $secondary-text;
+        margin-top: 48px;
+    }
+
+    &__name {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 165%;
+        color: $accent-color;
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            border-bottom: 2px solid $accent-color;
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+            width: 15px;
+        }
+    }
+
+    &__desc {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 156%;
+        color: $third-text;
+    }
+
+    &__line {
+        margin-bottom: 25px;
+        margin-top: 15px;
+        border-top: 2px solid $accent-color;
+        width: 15px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}

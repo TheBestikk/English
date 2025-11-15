@@ -1,1 +1,97 @@
 @use '../utils/variables' as *;
+
+.about {
+
+    padding: 280px 0px 130px;
+    background-color: $secondary-bg;
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 130%;
+        margin-bottom: 47px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 27%;
+        background-color: $primary-bg;
+        padding: 35px 28px 55px;
+        box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.1);
+        height: 341px;
+        transition: 450ms ease-in-out;
+        &:hover {
+
+            background-color: $accent-color;
+
+            .about {
+
+                &__icon {
+                    fill: $primary-bg;
+                }
+
+                &__subtitle {
+                    color: $secondary-text;
+                    &::before {
+                        border: 1px solid $primary-bg;
+                    }
+                }
+
+                &__desc {
+                    color: $secondary-text;
+                }
+
+            }
+
+
+        }
+    }
+
+    &__icon {
+        fill: $accent-color;
+        width: 55px;
+        height: 55px;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: $primary-text;
+        margin-bottom: 32px;
+        position: relative;
+        &::before {
+            content: "";
+            border: 1px solid $accent-color;
+            position: absolute;
+            width: 20px;
+            left: 45%;
+            top: 60px;
+        }
+    }
+
+    &__desc {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        color: $third-text;
+        margin-bottom: 55px;
+    }
+
+}
