@@ -1,1 +1,66 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
+.consultation {
+  background-image: url(/images/desktop/registration-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 62px;
+  }
+  &__title {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $secondary-text;
+    padding-bottom: 50px;
+    span {
+      color: $accent-color;
+    }
+  }
+  &__text {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: $secondary-text;
+    padding-bottom: 56px;
+    span {
+      color: $accent-color;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    width: 478px;
+    background-color: transparent;
+    padding: 23px 0 23px;
+    border: 1px solid $secondary-bg;
+    &::placeholder {
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      color: $secondary-text;
+      padding-left: 40px;
+    }
+  }
+  .button {
+    padding: 27px 71px 26px 71px;
+    color: $secondary-text;
+    background-color: $accent-color;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    gap: 30px;
+  }
+}

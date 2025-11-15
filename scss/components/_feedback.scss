@@ -1,1 +1,99 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
+.feedback {
+  background-color: $secondary-bg;
+  &__container {
+    display: flex;
+    padding: 130px 0 130px;
+    flex-direction: column;
+  }
+  &__title {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $primary-text;
+  }
+
+  &__first-arrow{
+    fill: $accent-color;
+    width: 25px;
+    position: relative;
+    top: 250px;
+    right: 100px;
+  }
+  &__second-arrow{
+    fill: $accent-color;
+    width: 25px;
+    position: relative;
+    left: 1400px;
+    bottom: 250px;
+    
+  }
+  &__wrapper {
+    background-color: $primary-bg;
+    padding: 50px 112px 51px 82px;
+    display: flex;
+    box-shadow: -5px 8px 26px 0 rgba(0, 0, 0, 0.04);
+  }
+  &__img {
+    width: 150px;
+    height: 150px;
+    
+  }
+  &__icon {
+    height: 30px;
+    width: 30px;
+    fill: $facebook-icon-color;
+    padding-top: 17px;
+    position: relative;
+    left: 58px;
+  }
+  &__subtitle {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+    padding-bottom: 10px;
+  }
+  &__about {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.08em;
+    color: $third-text;
+    padding-bottom: 18px;
+  }
+  &__desc {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    color: $feedback-text-color;
+  }
+  &__link {
+    color: $accent-color;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    text-decoration: underline;
+  }
+  &__wrapper-img{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+  }
+ &__list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ }
+ &__img-slider{
+  width: 54px;
+  height: 54px;
+ }
+}
