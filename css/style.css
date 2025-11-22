@@ -253,10 +253,13 @@ img {
   color: #FF6B09;
 }
 
+.footer {
+  padding-top: 55px;
+}
 .footer__container {
   display: flex;
-  padding-block: 55px;
   flex-direction: column;
+  background-color: #111518;
 }
 .footer__icon {
   width: 30px;
@@ -285,6 +288,8 @@ img {
 }
 .footer__wrapper {
   display: flex;
+  background-color: #FFF;
+  padding-bottom: 54px;
 }
 .footer__copyright {
   font-family: "Montserrat", sans-serif;
@@ -292,6 +297,10 @@ img {
   font-size: 14px;
   line-height: 200%;
   color: #b9b9b9;
+}
+.footer__bottom {
+  background-color: #111518;
+  padding: 20px 0;
 }
 .footer__list {
   display: flex;
@@ -781,4 +790,9 @@ img {
   content: "";
   border: 1px solid #FF6B09;
   width: 20px;
+}
+@media (max-width: 688px) {
+  .teacher .teacher {
+    padding: 70px 0;
+  }
 }
