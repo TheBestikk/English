@@ -1,48 +1,49 @@
 @use "../utils/variables" as *;
+
 .guarantee {
+
   &__container {
     display: flex;
     padding: 129px 0 130px;
     flex-direction: column;
   }
-  &__title {
-    font-family: $primary-font;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: $primary-text;
-    padding-bottom: 50px;
+
+  .title {
+    margin-bottom: 50px;
   }
+
   &__wrapper {
     background-color: $secondary-bg;
-    padding: 50px 112px 45px 112px;
-    
+    padding: 50px 112px 45px 112px;   
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   &__icon {
     width: 22px;
     height: 30px;
     fill: $accent-color;
-    
   }
+
   &__text {
     font-family: $primary-font;
     font-weight: 500;
     font-size: 20px;
     line-height: 140%;
-    span{
+    span {
         color: $accent-color ;
     }
   }
+
   &__item{
+
     display: flex;
     gap: 20px;
+
     &::before{
       content: "";
       border: 1px dashed $third-text;
@@ -51,13 +52,15 @@
       position: relative;
       left: 30px;
       bottom: 44px;
-      
     } 
+
     &:first-child::before{
         content: none;
       }
   }
+
   &__item:first-child &__icon{
     margin-left: 23px;
   }
+  
 }
