@@ -1,1 +1,48 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
+
+.footer {
+  &__container {
+    display: flex;
+    padding-block:55px;
+    flex-direction: column;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: $accent-color;
+    padding-right: 4px;
+    padding-left: 290px;
+  }
+  &__icon-insta{
+    width: 40px;
+    height: 40px;
+    
+  }
+  &__tel {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: $primary-text;
+    padding-right: 56px;
+    &::after{
+      content: '';
+      border: 1px solid $third-text;
+      margin-left: 30px;
+    }
+  }
+  &__wrapper{
+    display: flex;
+  }
+  &__copyright{
+    font-family: $primary-font;
+font-weight: 500;
+font-size: 14px;
+line-height: 200%;
+color: $third-text;
+  }
+  &__list{
+    display: flex;
+  }
+}
