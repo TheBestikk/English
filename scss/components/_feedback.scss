@@ -8,6 +8,7 @@
     display: flex;
     padding: 130px 0 130px;
     flex-direction: column;
+    position: relative;
   }
 
   .title {
@@ -17,17 +18,17 @@
   &__first-arrow{
     fill: $accent-color;
     width: 25px;
-    position: relative;
-    top: 250px;
-    right: 100px;
+    position: absolute;
+    top: 350px;
+    left: -100px;
   }
 
   &__second-arrow{
     fill: $accent-color;
     width: 25px;
-    position: relative;
+    position: absolute;
     left: 1400px;
-    bottom: 250px;
+    top: 350px;
   }
 
   &__wrapper {
@@ -97,6 +98,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  padding-top: 40px  ;
  }
 
  &__img-slider{

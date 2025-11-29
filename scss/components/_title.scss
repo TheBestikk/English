@@ -1,17 +1,23 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 
-.title .title-light {
+.title {
+  font-family: $primary-font;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  color: $primary-text;
+  text-align: center;
+  padding-bottom: 50px;
+  span {
+    color: $accent-color;
+  }
+  &--light {
     font-family: $primary-font;
     font-weight: 800;
     font-size: 46px;
     line-height: 130%;
-    color: $primary-text;
-
-    span {
-        color: $accent-color;
-    }
-}
-
-.title-light {
+    letter-spacing: 0.03em;
+    text-align: center;
     color: $secondary-text;
+  }
 }

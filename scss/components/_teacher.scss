@@ -1,12 +1,14 @@
 @use "../utils/variables" as *;
 
 .teacher {
+  padding-top: 324px;
   &__container {
     padding: 130px 0 129px ;
    
   }
   .title {
     padding-bottom: 50px;
+    text-align: left;
   }
   &__subtitle {
     font-family: $primary-font;
@@ -75,9 +77,41 @@
     width: 20px;
   }
  }
-@media (max-width:688px) {
+@media (max-width:768px) {
   .teacher{
     padding: 70px 0;
+
+    &__container{
+      padding: 70px 0;
+    }
+
+    &__subtitle{
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    &__text{
+      font-size: 12px;
+      padding-top: 20px;
+    }
+    &__desc{
+      font-size: 10px;
+    }
+    &__list{
+      gap: 20px;
+    }
+    &__wrapper-desc{
+      gap: 15px;
+      padding-top: 62px;
+    }
+    &__link{
+      font-size: 12px;
+      padding-top: 20px;
+    }
+    &__wrapper-right{
+      padding-left: 40px;
+      width: 403px;
+      height: 461px;
+    }
   }
   
 }
