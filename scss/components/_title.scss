@@ -19,5 +19,8 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $secondary-text;
+    span {
+    color: $accent-color;
+  }
   }
 }
