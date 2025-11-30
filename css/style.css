@@ -304,15 +304,18 @@ img {
     color: #FF6B09;
   }
 }
+.footer {
+  padding-top: 55px;
+}
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-block: 55px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #111518;
 }
 .footer__icon {
   width: 30px;
@@ -320,6 +323,10 @@ img {
   fill: #FF6B09;
   padding-right: 4px;
   padding-left: 290px;
+}
+.footer__icon-insta {
+  width: 40px;
+  height: 40px;
 }
 .footer__tel {
   font-family: "Montserrat", sans-serif;
@@ -403,16 +410,18 @@ img {
   background-position: center center;
   position: relative;
 }
-.problems .title {
+.problems .title-light {
   margin-bottom: 68px;
+  text-align: left;
 }
 
 .program {
   padding-block: 120px;
   background-color: #111518;
 }
-.program__title {
+.program .title-light {
   margin-bottom: 58px;
+  text-align: left;
 }
 .program__columns {
   display: -webkit-box;
@@ -610,6 +619,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .feedback .title {
   text-align: center;
@@ -715,9 +725,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.guarantee .title {
-  margin-bottom: 50px;
 }
 .guarantee__wrapper {
   background-color: #f1f1f1;
@@ -922,18 +929,60 @@ img {
   border: 1px solid #FF6B09;
   width: 20px;
 }
+@media (max-width: 768px) {
+  .teacher .teacher {
+    padding: 70px 0;
+  }
+  .teacher .teacher__container {
+    padding: 70px 0;
+  }
+  .teacher .teacher__subtitle {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .teacher .teacher__text {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .teacher .teacher__desc {
+    font-size: 10px;
+  }
+  .teacher .teacher__list {
+    gap: 20px;
+  }
+  .teacher .teacher__wrapper-desc {
+    gap: 15px;
+    padding-top: 62px;
+  }
+  .teacher .teacher__link {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .teacher .teacher__wrapper-right {
+    padding-left: 40px;
+    width: 403px;
+    height: 461px;
+  }
+}
 
-.title .title-light {
+.title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 46px;
   line-height: 130%;
   color: #111518;
+  text-align: center;
+  padding-bottom: 50px;
 }
-.title .title-light span {
+.title span {
   color: #FF6B09;
 }
-
 .title-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: #FFF;
 }
