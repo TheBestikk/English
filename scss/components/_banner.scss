@@ -36,7 +36,7 @@
         color: $primary-text;
         margin-bottom: 45px;
 
-        span {
+        &__span-first {
             font-weight: 500;
             color: $third-text;
         }
@@ -46,4 +46,24 @@
         @include button-filled
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .banner{
+
+        &__title{
+            font-size: 26px;
+        }
+
+        &__desc {
+            font-size: 14px;
+            line-height: 157%;
+        }
+
+        &__span-second {
+            color: $accent-color;
+        }
+
+        
+    }
 }

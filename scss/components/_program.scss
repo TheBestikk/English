@@ -5,7 +5,7 @@
     padding-block: 120px;
     background-color: $third-bg;
 
-    &__title {
+    .title-light {
         margin-bottom: 58px;
     }
 
@@ -79,5 +79,13 @@
         position: relative;
         bottom: 0;
         left: 0;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__bottom {
+        position: absolute;
     }
 }

@@ -9,3 +9,10 @@
     text-transform: uppercase;
     padding: 27px 70px
 }
+
+@media screen and (max-width: 768px) {
+    .button {
+        font-size: 12px;
+        letter-spacing: 0.8em;
+    }
+}
