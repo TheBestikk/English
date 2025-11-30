@@ -321,10 +321,6 @@ img {
   padding-right: 4px;
   padding-left: 290px;
 }
-.footer__icon-insta {
-  width: 40px;
-  height: 40px;
-}
 .footer__tel {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -343,6 +339,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #FFF;
+  padding-bottom: 54px;
 }
 .footer__copyright {
   font-family: "Montserrat", sans-serif;
@@ -350,6 +348,10 @@ img {
   font-size: 14px;
   line-height: 200%;
   color: #b9b9b9;
+}
+.footer__bottom {
+  background-color: #111518;
+  padding: 20px 0;
 }
 .footer__list {
   display: -webkit-box;
@@ -615,16 +617,16 @@ img {
 .feedback__first-arrow {
   fill: #FF6B09;
   width: 25px;
-  position: relative;
-  top: 250px;
-  right: 100px;
+  position: absolute;
+  top: 350px;
+  left: -100px;
 }
 .feedback__second-arrow {
   fill: #FF6B09;
   width: 25px;
-  position: relative;
+  position: absolute;
   left: 1400px;
-  bottom: 250px;
+  top: 350px;
 }
 .feedback__wrapper {
   background-color: #FFF;
@@ -697,6 +699,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  padding-top: 40px;
 }
 .feedback__img-slider {
   width: 54px;
@@ -830,11 +833,15 @@ img {
   width: 15px;
 }
 
+.teacher {
+  padding-top: 324px;
+}
 .teacher__container {
   padding: 130px 0 129px;
 }
 .teacher .title {
   padding-bottom: 50px;
+  text-align: left;
 }
 .teacher__subtitle {
   font-family: "Montserrat", sans-serif;

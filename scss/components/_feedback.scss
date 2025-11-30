@@ -1,33 +1,33 @@
 @use "../utils/variables" as *;
 
 .feedback {
-
   background-color: $secondary-bg;
 
   &__container {
     display: flex;
     padding: 130px 0 130px;
     flex-direction: column;
+    position: relative;
   }
 
   .title {
     text-align: center;
   }
 
-  &__first-arrow{
+  &__first-arrow {
     fill: $accent-color;
     width: 25px;
-    position: relative;
-    top: 250px;
-    right: 100px;
+    position: absolute;
+    top: 350px;
+    left: -100px;
   }
 
-  &__second-arrow{
+  &__second-arrow {
     fill: $accent-color;
     width: 25px;
-    position: relative;
+    position: absolute;
     left: 1400px;
-    bottom: 250px;
+    top: 350px;
   }
 
   &__wrapper {
@@ -86,22 +86,22 @@
     line-height: 156%;
     text-decoration: underline;
   }
-  
-  &__wrapper-img{
+
+  &__wrapper-img {
     display: flex;
     flex-direction: column;
     padding-right: 40px;
   }
 
- &__list{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
- }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+  }
 
- &__img-slider{
-  width: 54px;
-  height: 54px;
- }
-
+  &__img-slider {
+    width: 54px;
+    height: 54px;
+  }
 }

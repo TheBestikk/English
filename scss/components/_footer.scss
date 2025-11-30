@@ -1,10 +1,12 @@
 @use "../utils/variables" as *;
 
 .footer {
+  padding-top: 55px;
+
   &__container {
     display: flex;
-    padding-block:55px;
     flex-direction: column;
+    background-color: $third-bg;
   }
   &__icon {
     width: 30px;
@@ -25,23 +27,29 @@
     text-align: center;
     color: $primary-text;
     padding-right: 56px;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       border: 1px solid $third-text;
       margin-left: 30px;
     }
   }
-  &__wrapper{
+  &__wrapper {
     display: flex;
+    background-color: $primary-bg;
+    padding-bottom: 54px;
   }
-  &__copyright{
+  &__copyright {
     font-family: $primary-font;
-font-weight: 500;
-font-size: 14px;
-line-height: 200%;
-color: $third-text;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+    color: $third-text;
   }
-  &__list{
+  &__bottom{
+    background-color: $primary-text;
+    padding: 20px 0;
+  }
+  &__list {
     display: flex;
   }
 }
